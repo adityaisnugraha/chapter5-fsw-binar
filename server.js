@@ -10,11 +10,10 @@ server.set('views', 'public');
 server.use(express.json());
 server.use('/static', express.static('public/static'))
 
-
 server.get('/', function(req, res) {
     // res.sendFile('public/chapter3.html', {root: __dirname});
     res.render(`chapter3.ejs`, {
-        headerText: 'PLAY TRADITIONAL GAME'
+        headerText: 'PLAY TRADITIONAL GAMEe'
     });
 });
 
